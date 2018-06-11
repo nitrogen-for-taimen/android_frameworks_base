@@ -695,7 +695,7 @@ public class StatusBar extends SystemUI implements DemoMode,
     }
 
     private void tickTrackInfo(MediaController mc) {
-        ArrayList<Entry> activeNotifications = mNotificationData.getAllNotifications();
+        ArrayList<Entry> activeNotifications = mNotificationData.getActiveNotifications();
         int N = activeNotifications.size();
         final String pkg = mc.getPackageName();
         for (int i = 0; i < N; i++) {
